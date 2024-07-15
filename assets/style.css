@@ -87,37 +87,49 @@
   align-items: center;
   gap: 2rem;
   border-radius: 0.8rem;
+  overflow: scroll;
+  height: 21rem;
+}
+
+.nav-links::-webkit-scrollbar {
+  width: 60px; /* Width of the scrollbar */
+}
+
+.nav-links::-webkit-scrollbar-track {
+  background: black; /* Background of the scrollbar track */
+}
+
+.nav-links::-webkit-scrollbar-thumb {
+  background: black; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Round edges of the scrollbar thumb */
+}
+
+.nav-links::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
-
-  gap: 1rem;
-  cursor: pointer;
-}
-
-.connect {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.connect-title {
+.link-title {
   display: flex;
   gap: 1rem;
   align-items: center;
   cursor: pointer;
 }
 
-.connect-links {
+.sub-links {
   opacity: 0;
   height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 
   transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -127,10 +139,10 @@
   border-radius: 0.5rem;
 }
 
-.connect-links.show {
+.sub-links.show {
   opacity: 1;
 
-  height: 7rem;
+  height: 12rem;
 }
 
 .nav-links.active {

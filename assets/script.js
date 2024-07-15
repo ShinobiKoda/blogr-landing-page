@@ -1,15 +1,31 @@
 const hamburger = document.querySelector(".hamburger");
 const nav_links = document.querySelector(".nav-links");
-const connect_title = document.querySelector(".connect-title");
-const connect_links = document.querySelector(".connect-links");
-const arrow_img = document.querySelector(".arrow-img");
+const title_links = document.querySelectorAll(".link-title");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   nav_links.classList.toggle("active");
 });
 
-connect_title.addEventListener("click", () => {
-  connect_links.classList.toggle("show");
-  arrow_img.classList.toggle("rotate");
+title_links.forEach((title) => {
+  title.addEventListener("click", () => {
+    const sub_link = title.nextElementSibling;
+    const arrow_img = title.querySelector(".arrow-img");
+
+    // Hide all sub-links and reset all arrows
+    document.querySelectorAll(".sub-links").forEach((link) => {
+      if (link !== sub_link) {
+        link.classList.remove("show");
+      }
+    });
+    document.querySelectorAll(".arrow-img").forEach((img) => {
+      if (img !== arrow_img) {
+        img.classList.remove("rotate");
+      }
+    });
+
+    // Toggle the clicked sub-link and arrow
+    sub_link.classList.toggle("show");
+    arrow_img.classList.toggle("rotate");
+  });
 });
