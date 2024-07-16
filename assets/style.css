@@ -93,7 +93,7 @@
 }
 
 .nav-links::-webkit-scrollbar {
-  width: 20px; /* Width of the scrollbar */
+  width: 6px; /* Width of the scrollbar */
 }
 
 .nav-links::-webkit-scrollbar-track {
