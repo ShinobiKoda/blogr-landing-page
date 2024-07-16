@@ -87,12 +87,13 @@
   align-items: center;
   gap: 2rem;
   border-radius: 0.8rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 21rem;
 }
 
 .nav-links::-webkit-scrollbar {
-  width: 60px; /* Width of the scrollbar */
+  width: 20px; /* Width of the scrollbar */
 }
 
 .nav-links::-webkit-scrollbar-track {
@@ -240,4 +241,135 @@
 .learn-more:hover {
   background-color: white;
   color: var(--light-red-cta-text);
+}
+
+.flex-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration-section {
+  margin-top: 3rem;
+
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.illustration-img {
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-heading {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--very-dark-blue-headings);
+}
+
+.illustration-info {
+  gap: 1rem;
+}
+
+.illustration-paragraphs {
+  gap: 2rem;
+}
+
+.paragraph {
+  padding: 0 2rem;
+  gap: 1rem;
+  line-height: 2rem;
+  color: var(--very-dark-grayish-blue-body-copy);
+}
+
+.infrastructure-section {
+  margin-top: 19rem;
+  position: relative;
+  background-color: var(--very-dark-gray-blue);
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  height: 35rem;
+  /* overflow: hidden; */
+}
+
+.infrastructure-background-img {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.infrastructure-background-img img {
+  width: 20rem;
+  position: absolute; /* Position it properly within its container */
+}
+
+.infrastructure-info {
+  position: relative;
+  z-index: 1;
+}
+
+.infrastructure-img {
+  position: relative;
+  z-index: 2;
+  top: -11rem;
+}
+
+.infrastructure-paragraph {
+  color: white;
+  position: relative;
+  top: -12rem;
+  text-align: center;
+  gap: 1rem;
+  line-height: 1.5rem;
+  padding: 0 2rem;
+}
+
+.infrastructure-heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 3rem;
+  background-color: var(--very-dark-black-blue-footer-background);
+  border-top-right-radius: 4rem;
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.footer-nav {
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-links {
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-nav h4 {
+  color: white;
+}
+
+.footer-links a {
+  color: var(--grayish-blue-footer-text);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
