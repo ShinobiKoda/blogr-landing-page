@@ -93,21 +93,19 @@
 }
 
 /* .nav-links::-webkit-scrollbar {
-  width: 2px; /* Width of the scrollbar */
-  height: 80%;
-}
+  width: 2px;
+} */
 
-.nav-links::-webkit-scrollbar-track {
-  background: black; /* Background of the scrollbar track */
-}
+/* .nav-links::-webkit-scrollbar-track {
+  background: black; 
 
 .nav-links::-webkit-scrollbar-thumb {
-  background: black; /* Color of the scrollbar thumb */
-  border-radius: 5px; /* Round edges of the scrollbar thumb */
+  background: black; 
+  border-radius: 5px; 
 }
 
 .nav-links::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color when hovered */
+  background: #555; 
 } */
 
 .nav-link {
