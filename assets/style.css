@@ -92,7 +92,7 @@
   height: 21rem;
 }
 
-.nav-links::-webkit-scrollbar {
+/* .nav-links::-webkit-scrollbar {
   width: 2px; /* Width of the scrollbar */
   height: 80%;
 }
@@ -108,7 +108,7 @@
 
 .nav-links::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color when hovered */
-}
+} */
 
 .nav-link {
   display: flex;
