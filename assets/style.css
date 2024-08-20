@@ -448,6 +448,15 @@ hr {
   }
 
   .desktop-nav-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .desktop-nav-sub-link {
+    display: none;
+  }
+
+  .desktop-nav-link a:hover {
     opacity: 0.8;
     cursor: pointer;
   }
@@ -541,5 +550,42 @@ hr {
     flex-direction: row;
     top: 0;
     margin-top: 4rem;
+  }
+
+  .desktop-nav-link {
+    position: relative;
+  }
+
+  .desktop-nav-sub-link {
+    display: none;
+
+    position: absolute;
+    top: 1.5rem;
+    z-index: 1;
+    background-color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+  }
+
+  .desktop-nav-sub-link li {
+    list-style: none;
+    color: var(--very-dark-grayish-blue-body-copy);
+  }
+
+  .desktop-nav-sub-link li:hover {
+    color: var(--light-red);
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .show-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .desktop-rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
   }
 }
